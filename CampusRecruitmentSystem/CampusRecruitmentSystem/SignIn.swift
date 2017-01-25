@@ -57,18 +57,21 @@ class SignIn: UIViewController, ValidationDelegate, UITextFieldDelegate  {
         
         self.view.showHud()
         
-        FIRAuth.auth()?.signIn(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!, completion: { (user, error) in
-           
+        Auth.login(email: self.emailTextField.text!, password: self.passwordTextField.text!) { (error) in
             self.view.hideHud()
-            
-            guard let _ = user else {
-                self.showAlert(title: "Error", msg: error!.localizedDescription)
-                return
-            }
-            
-            let mainController = self.storyboard?.instantiateViewController(withIdentifier: "drawerController")
-            self.present(mainController!, animated: true, completion: nil)
-        })
+        }
+//        FIRAuth.auth()?.signIn(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!, completion: { (user, error) in
+//           
+//            self.view.hideHud()
+//            
+//            guard let _ = user else {
+//                self.showAlert(title: "Error", msg: error!.localizedDescription)
+//                return
+//            }
+//            
+//            let mainController = self.storyboard?.instantiateViewController(withIdentifier: "drawerController")
+//            self.present(mainController!, animated: true, completion: nil)
+//        })
     }
     
     func validationFailed(_ errors:[(Validatable, ValidationError)]) {

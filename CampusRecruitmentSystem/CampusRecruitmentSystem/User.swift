@@ -8,16 +8,19 @@
 
 import Foundation
 import ObjectMapper
+import RxSwift
 
 class User:Mappable {
     
     var email: String?
     var name: String?
     var contactNo: Int?
-    var userType: Int?
+    var userType: UserType?
     var password: String?
     
-    init(email: String, name: String, contactNo: Int, userType: Int, password: String) {
+    static var shared: Variable<[User]> = Variable([])
+    
+    init(email: String, name: String, contactNo: Int, userType: UserType, password: String) {
         self.email = email
         self.name = name
         self.contactNo = contactNo
@@ -28,16 +31,37 @@ class User:Mappable {
     // Mappable
     func mapping(map: Map) {
         email           <- map["email"]
-        name     <- map["name"]
-        contactNo        <- map["contactNo"]
-        userType          <- map["userType"]
-        password       <- map["password"]
+        name            <- map["name"]
+        contactNo       <- map["contactNo"]
+        userType        <- (map["userType"], transformIntoUserType)
+        password        <- map["password"]
     }
     
     required init(map: Map) {
         
     }
 
+}
+
+func +(user: User, student: Student) -> Student {
     
+    student.email = user.email
+    student.name = user.name
+    student.contactNo = user.contactNo
+    student.userType = user.userType
+    student.password = user.password
+    
+    return student
+}
+
+func +(user: User, company: Company) -> Company {
+    
+    company.email = user.email
+    company.name = user.name
+    company.contactNo = user.contactNo
+    company.userType = user.userType
+    company.password = user.password
+    
+    return company
 }
 

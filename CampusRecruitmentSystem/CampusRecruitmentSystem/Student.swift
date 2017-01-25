@@ -16,7 +16,7 @@ class Student: User {
     var course: String?
     var cgpa: Float?
     
-    init(rollNo: Float, year: Int, course: String,cgpa: Float, email: String, name: String, contactNo: Int, userType: Int, password: String) {
+    init(rollNo: Float, year: Int, course: String,cgpa: Float, email: String, name: String, contactNo: Int, userType: UserType, password: String) {
         self.rollNo = rollNo
         self.year = year
         self.course = course

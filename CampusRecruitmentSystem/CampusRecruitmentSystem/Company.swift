@@ -15,7 +15,7 @@ class Company: User {
     var companyName: String?
     var description: String?
     
-    init(address: String, companyName: String, description: String, email: String, name: String, contactNo: Int, userType: Int, password: String) {
+    init(address: String, companyName: String, description: String, email: String, name: String, contactNo: Int, userType: UserType, password: String) {
         self.address = address
         self.companyName = companyName
         self.description = description
@@ -33,3 +33,5 @@ class Company: User {
         self.description     <- map["description"]
     }
 }
+
+
