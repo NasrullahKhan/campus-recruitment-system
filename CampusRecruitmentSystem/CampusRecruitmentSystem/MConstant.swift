@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 import MBProgressHUD
+import FirebaseDatabase
+
+var cRef = FIRDatabase.database().reference()
 
 extension UIView {
     

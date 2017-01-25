@@ -22,6 +22,10 @@
 		5F5971621E38D762000E20A6 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F59715D1E38D762000E20A6 /* ProfileEditViewController.swift */; };
 		5F5971631E38D762000E20A6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F59715E1E38D762000E20A6 /* User.swift */; };
 		5F5971651E38D772000E20A6 /* MConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5971641E38D772000E20A6 /* MConstant.swift */; };
+		5FE00A511E38E087001793D9 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE00A501E38E087001793D9 /* Auth.swift */; };
+		5FE00A531E390176001793D9 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE00A521E390176001793D9 /* Student.swift */; };
+		5FE00A551E390874001793D9 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE00A541E390874001793D9 /* Company.swift */; };
+		5FE00A571E390C84001793D9 /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE00A561E390C84001793D9 /* UserType.swift */; };
 		75B3CEC157A76558DB55E40A /* Pods_CampusRecruitmentSystemUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC232E5DE6AD0C66BD2DDEF /* Pods_CampusRecruitmentSystemUITests.framework */; };
 		921BDE7FE0DE58A56B2B8226 /* Pods_CampusRecruitmentSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23726B5C3659C2667BB316BA /* Pods_CampusRecruitmentSystem.framework */; };
 /* End PBXBuildFile section */
@@ -70,6 +74,10 @@
 		5F59715D1E38D762000E20A6 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
 		5F59715E1E38D762000E20A6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5F5971641E38D772000E20A6 /* MConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MConstant.swift; sourceTree = "<group>"; };
+		5FE00A501E38E087001793D9 /* Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		5FE00A521E390176001793D9 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		5FE00A541E390874001793D9 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		5FE00A561E390C84001793D9 /* UserType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
 		DEC232E5DE6AD0C66BD2DDEF /* Pods_CampusRecruitmentSystemUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampusRecruitmentSystemUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4D6D11943CCA6B6CC02D9AD /* Pods-CampusRecruitmentSystemUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusRecruitmentSystemUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CampusRecruitmentSystemUITests/Pods-CampusRecruitmentSystemUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F91E619AF4CBEB9E09C991D1 /* Pods-CampusRecruitmentSystemTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusRecruitmentSystemTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CampusRecruitmentSystemTests/Pods-CampusRecruitmentSystemTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -196,6 +204,10 @@
 			isa = PBXGroup;
 			children = (
 				5F59715E1E38D762000E20A6 /* User.swift */,
+				5FE00A561E390C84001793D9 /* UserType.swift */,
+				5FE00A521E390176001793D9 /* Student.swift */,
+				5FE00A541E390874001793D9 /* Company.swift */,
+				5FE00A501E38E087001793D9 /* Auth.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -497,12 +509,16 @@
 			files = (
 				5F5971651E38D772000E20A6 /* MConstant.swift in Sources */,
 				5F5971621E38D762000E20A6 /* ProfileEditViewController.swift in Sources */,
+				5FE00A571E390C84001793D9 /* UserType.swift in Sources */,
 				5F5971591E38D757000E20A6 /* SignUp.swift in Sources */,
+				5FE00A531E390176001793D9 /* Student.swift in Sources */,
 				5F5971601E38D762000E20A6 /* LeftDrawerViewController.swift in Sources */,
 				5F5971631E38D762000E20A6 /* User.swift in Sources */,
 				5F5971611E38D762000E20A6 /* MainViewController.swift in Sources */,
+				5FE00A551E390874001793D9 /* Company.swift in Sources */,
 				5F5971291E38D422000E20A6 /* AppDelegate.swift in Sources */,
 				5F59715F1E38D762000E20A6 /* SignIn.swift in Sources */,
+				5FE00A511E38E087001793D9 /* Auth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

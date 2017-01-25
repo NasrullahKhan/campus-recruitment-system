@@ -8,6 +8,7 @@ target 'CampusRecruitmentSystem' do
     # Pods for CampusRecruitmentSystem
     pod 'Firebase/Core'
     pod 'Firebase/Auth'
+    pod 'Firebase/Database'
     pod 'MBProgressHUD', '~> 1.0'
     pod 'SwiftValidator', :git => 'https://github.com/jpotts18/SwiftValidator.git', :branch => 'master'
     pod 'RxSwift', '~> 3.1'

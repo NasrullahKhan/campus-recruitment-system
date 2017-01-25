@@ -7,22 +7,37 @@
 //
 
 import Foundation
-import Firebase
+import ObjectMapper
 
-class User {
+class User:Mappable {
     
-    var email: String
-    var fullName: String
-    var CGPA: Float
-    var rollNo: Int
-    var mobileNumber: Int
+    var email: String?
+    var name: String?
+    var contactNo: Int?
+    var userType: Int?
+    var password: String?
     
-    init(email: String, fullName: String, CGPA: Float, rollNo: Int, mobileNumber: Int) {
+    init(email: String, name: String, contactNo: Int, userType: Int, password: String) {
         self.email = email
-        self.fullName = fullName
-        self.CGPA = CGPA
-        self.rollNo = rollNo
-        self.mobileNumber = mobileNumber
+        self.name = name
+        self.contactNo = contactNo
+        self.userType = userType
+        self.password = password
     }
+    
+    // Mappable
+    func mapping(map: Map) {
+        email           <- map["email"]
+        name     <- map["name"]
+        contactNo        <- map["contactNo"]
+        userType          <- map["userType"]
+        password       <- map["password"]
+    }
+    
+    required init(map: Map) {
+        
+    }
+
+    
 }
 

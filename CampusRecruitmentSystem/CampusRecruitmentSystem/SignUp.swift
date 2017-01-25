@@ -7,11 +7,10 @@
 //
 
 import UIKit
-import FirebaseAuth
 import SwiftValidator
 
 class SignUp: UIViewController, ValidationDelegate, UITextFieldDelegate {
-
+    
     // TextFields
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -39,7 +38,7 @@ class SignUp: UIViewController, ValidationDelegate, UITextFieldDelegate {
         self.validator.registerField(self.emailTextField, errorLabel: self.emailErrorLabel, rules: [RequiredRule(), EmailRule()])
         self.validator.registerField(self.passwordTextField, errorLabel: self.passwordErrorLabel, rules: [RequiredRule(), MinLengthRule(length: 6), MaxLengthRule(length: 40)])
         self.validator.registerField(self.fullNameTextField, errorLabel: self.fullNameErrorLabel, rules: [RequiredRule(), MinLengthRule(length: 1), MaxLengthRule(length: 40)])
-        self.validator.registerField(self.marksTextField, errorLabel: self.marksErrorLabel, rules: [RequiredRule(), MinLengthRule(length: 6), MaxLengthRule(length: 40)])
+        self.validator.registerField(self.marksTextField, errorLabel: self.marksErrorLabel, rules: [RequiredRule(), MinLengthRule(length: 1), MaxLengthRule(length: 40)])
         self.validator.registerField(self.rollNoTextField, errorLabel: self.rollNoErrorLabel, rules: [RequiredRule(), MinLengthRule(length: 6), MaxLengthRule(length: 40)])
         self.validator.registerField(self.mobileNoTextField, errorLabel: self.mobileNoErrorLabel, rules: [RequiredRule(), MinLengthRule(length: 6), MaxLengthRule(length: 40)])
         
@@ -53,11 +52,11 @@ class SignUp: UIViewController, ValidationDelegate, UITextFieldDelegate {
             
             validationError.errorLabel?.isHidden = false
             validationError.errorLabel?.text = validationError.errorMessage
-           
+            
         })
-
+        
     }
-
+    
     @IBAction func submitTapped(_ sender: Any) {
         
         self.validator.validate(self)
@@ -73,18 +72,36 @@ class SignUp: UIViewController, ValidationDelegate, UITextFieldDelegate {
         
         self.view.showHud()
         
-        FIRAuth.auth()?.createUser(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!, completion: { (user, error) in
-            
-            self.view.hideHud()
-            
-            guard let _ = user else {
-                self.showAlert(title: "Error", msg: error!.localizedDescription)
-                return
-            }
-            
-            let mainController = self.storyboard?.instantiateViewController(withIdentifier: "MainControllerIdentifier") as! MainViewController
-            self.present(mainController, animated: true, completion: nil)
-        })
+//        let student = Student(rollNo: 123456, year: 2012, course: "BSCS",cgpa: Float(self.marksTextField.text!)!, email: self.emailTextField.text!, name: self.fullNameTextField.text!, contactNo: Int(self.mobileNoTextField.text!)!, userType: 0, password: self.passwordTextField.text!)
+//        
+//        Auth.createStudent(student: student) { (error) in
+//            
+//            self.view.hideHud()
+//            
+//            if error != nil {
+//                self.showAlert(title: "Error", msg: error!)
+//            }else {
+//                
+//                let mainController = self.storyboard?.instantiateViewController(withIdentifier: "drawerController")
+//                self.present(mainController!, animated: true, completion: nil)
+//                
+//            }
+//        }
+        
+//        let company = Company(address: "DHA Phase 5", companyName: "Panacloud Pvt. Ltd.", description: "Software Hourse", email: "panacloud@esox.com", name: "ZiaKhan", contactNo: 12345677712, userType: 2, password: "123456")
+//        
+//        Auth.createCompany(company: company) { (error) in
+//            
+//            self.view.hideHud()
+//            
+//            if error != nil {
+//                self.showAlert(title: "Error", msg: error!)
+//            }else {
+//                
+//                self.showAlert(title: "Success", msg: "Created Successfully")
+//                
+//            }
+//        }
     }
     
     func validationFailed(_ errors:[(Validatable, ValidationError)]) {
