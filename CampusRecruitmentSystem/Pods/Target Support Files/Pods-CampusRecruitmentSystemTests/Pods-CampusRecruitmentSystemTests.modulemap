@@ -1,0 +1,6 @@
+framework module Pods_CampusRecruitmentSystemTests {
+  umbrella header "Pods-CampusRecruitmentSystemTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

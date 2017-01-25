@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		086A67306DE3EC50A6DCDE3F /* Pods_CampusRecruitmentSystemTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F0D8F620B468437171430A /* Pods_CampusRecruitmentSystemTests.framework */; };
 		5F5971291E38D422000E20A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5971281E38D422000E20A6 /* AppDelegate.swift */; };
-		5F59712B1E38D422000E20A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F59712A1E38D422000E20A6 /* ViewController.swift */; };
 		5F59712E1E38D422000E20A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F59712C1E38D422000E20A6 /* Main.storyboard */; };
 		5F5971301E38D422000E20A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F59712F1E38D422000E20A6 /* Assets.xcassets */; };
 		5F5971331E38D422000E20A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F5971311E38D422000E20A6 /* LaunchScreen.storyboard */; };
 		5F59713E1E38D423000E20A6 /* CampusRecruitmentSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F59713D1E38D423000E20A6 /* CampusRecruitmentSystemTests.swift */; };
 		5F5971491E38D423000E20A6 /* CampusRecruitmentSystemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5971481E38D423000E20A6 /* CampusRecruitmentSystemUITests.swift */; };
+		5F5971571E38D5FA000E20A6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F5971561E38D5FA000E20A6 /* GoogleService-Info.plist */; };
+		5F5971591E38D757000E20A6 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5971581E38D757000E20A6 /* SignUp.swift */; };
+		5F59715F1E38D762000E20A6 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F59715A1E38D762000E20A6 /* SignIn.swift */; };
+		5F5971601E38D762000E20A6 /* LeftDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F59715B1E38D762000E20A6 /* LeftDrawerViewController.swift */; };
+		5F5971611E38D762000E20A6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F59715C1E38D762000E20A6 /* MainViewController.swift */; };
+		5F5971621E38D762000E20A6 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F59715D1E38D762000E20A6 /* ProfileEditViewController.swift */; };
+		5F5971631E38D762000E20A6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F59715E1E38D762000E20A6 /* User.swift */; };
+		5F5971651E38D772000E20A6 /* MConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5971641E38D772000E20A6 /* MConstant.swift */; };
+		75B3CEC157A76558DB55E40A /* Pods_CampusRecruitmentSystemUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC232E5DE6AD0C66BD2DDEF /* Pods_CampusRecruitmentSystemUITests.framework */; };
+		921BDE7FE0DE58A56B2B8226 /* Pods_CampusRecruitmentSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23726B5C3659C2667BB316BA /* Pods_CampusRecruitmentSystem.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +44,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		003FD3A0F930AB8FB458FC0E /* Pods-CampusRecruitmentSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusRecruitmentSystem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CampusRecruitmentSystem/Pods-CampusRecruitmentSystem.debug.xcconfig"; sourceTree = "<group>"; };
+		06412C474FC1AD67B330B6DE /* Pods-CampusRecruitmentSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusRecruitmentSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-CampusRecruitmentSystem/Pods-CampusRecruitmentSystem.release.xcconfig"; sourceTree = "<group>"; };
+		19F0D8F620B468437171430A /* Pods_CampusRecruitmentSystemTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampusRecruitmentSystemTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23726B5C3659C2667BB316BA /* Pods_CampusRecruitmentSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampusRecruitmentSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AF2695E8115A4D67E19157E /* Pods-CampusRecruitmentSystemTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusRecruitmentSystemTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CampusRecruitmentSystemTests/Pods-CampusRecruitmentSystemTests.release.xcconfig"; sourceTree = "<group>"; };
+		44AE7C1BB9CB554A6A7DD038 /* Pods-CampusRecruitmentSystemUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusRecruitmentSystemUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CampusRecruitmentSystemUITests/Pods-CampusRecruitmentSystemUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5F5971251E38D422000E20A6 /* CampusRecruitmentSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampusRecruitmentSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F5971281E38D422000E20A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5F59712A1E38D422000E20A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5F59712D1E38D422000E20A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F59712F1E38D422000E20A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F5971321E38D422000E20A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +62,17 @@
 		5F5971441E38D423000E20A6 /* CampusRecruitmentSystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampusRecruitmentSystemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F5971481E38D423000E20A6 /* CampusRecruitmentSystemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusRecruitmentSystemUITests.swift; sourceTree = "<group>"; };
 		5F59714A1E38D423000E20A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F5971561E38D5FA000E20A6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5F5971581E38D757000E20A6 /* SignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		5F59715A1E38D762000E20A6 /* SignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		5F59715B1E38D762000E20A6 /* LeftDrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftDrawerViewController.swift; sourceTree = "<group>"; };
+		5F59715C1E38D762000E20A6 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5F59715D1E38D762000E20A6 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
+		5F59715E1E38D762000E20A6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5F5971641E38D772000E20A6 /* MConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MConstant.swift; sourceTree = "<group>"; };
+		DEC232E5DE6AD0C66BD2DDEF /* Pods_CampusRecruitmentSystemUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampusRecruitmentSystemUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4D6D11943CCA6B6CC02D9AD /* Pods-CampusRecruitmentSystemUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusRecruitmentSystemUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CampusRecruitmentSystemUITests/Pods-CampusRecruitmentSystemUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F91E619AF4CBEB9E09C991D1 /* Pods-CampusRecruitmentSystemTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusRecruitmentSystemTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CampusRecruitmentSystemTests/Pods-CampusRecruitmentSystemTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				921BDE7FE0DE58A56B2B8226 /* Pods_CampusRecruitmentSystem.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				086A67306DE3EC50A6DCDE3F /* Pods_CampusRecruitmentSystemTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +96,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75B3CEC157A76558DB55E40A /* Pods_CampusRecruitmentSystemUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E189D7AD8D7B51B1638CFDF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				003FD3A0F930AB8FB458FC0E /* Pods-CampusRecruitmentSystem.debug.xcconfig */,
+				06412C474FC1AD67B330B6DE /* Pods-CampusRecruitmentSystem.release.xcconfig */,
+				F91E619AF4CBEB9E09C991D1 /* Pods-CampusRecruitmentSystemTests.debug.xcconfig */,
+				2AF2695E8115A4D67E19157E /* Pods-CampusRecruitmentSystemTests.release.xcconfig */,
+				44AE7C1BB9CB554A6A7DD038 /* Pods-CampusRecruitmentSystemUITests.debug.xcconfig */,
+				F4D6D11943CCA6B6CC02D9AD /* Pods-CampusRecruitmentSystemUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5F59711C1E38D422000E20A6 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +123,8 @@
 				5F59713C1E38D423000E20A6 /* CampusRecruitmentSystemTests */,
 				5F5971471E38D423000E20A6 /* CampusRecruitmentSystemUITests */,
 				5F5971261E38D422000E20A6 /* Products */,
+				3E189D7AD8D7B51B1638CFDF /* Pods */,
+				D7E17FC8631347506A4EB2AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +142,15 @@
 			isa = PBXGroup;
 			children = (
 				5F5971281E38D422000E20A6 /* AppDelegate.swift */,
-				5F59712A1E38D422000E20A6 /* ViewController.swift */,
+				5F5971691E38DA7B000E20A6 /* Model */,
+				5F5971661E38DA06000E20A6 /* Login Controllers */,
+				5F5971681E38DA4B000E20A6 /* Main Controllers */,
+				5F5971641E38D772000E20A6 /* MConstant.swift */,
 				5F59712C1E38D422000E20A6 /* Main.storyboard */,
 				5F59712F1E38D422000E20A6 /* Assets.xcassets */,
 				5F5971311E38D422000E20A6 /* LaunchScreen.storyboard */,
 				5F5971341E38D422000E20A6 /* Info.plist */,
+				5F5971561E38D5FA000E20A6 /* GoogleService-Info.plist */,
 			);
 			path = CampusRecruitmentSystem;
 			sourceTree = "<group>";
@@ -125,6 +173,43 @@
 			path = CampusRecruitmentSystemUITests;
 			sourceTree = "<group>";
 		};
+		5F5971661E38DA06000E20A6 /* Login Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5F5971581E38D757000E20A6 /* SignUp.swift */,
+				5F59715A1E38D762000E20A6 /* SignIn.swift */,
+			);
+			name = "Login Controllers";
+			sourceTree = "<group>";
+		};
+		5F5971681E38DA4B000E20A6 /* Main Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5F59715B1E38D762000E20A6 /* LeftDrawerViewController.swift */,
+				5F59715C1E38D762000E20A6 /* MainViewController.swift */,
+				5F59715D1E38D762000E20A6 /* ProfileEditViewController.swift */,
+			);
+			name = "Main Controllers";
+			sourceTree = "<group>";
+		};
+		5F5971691E38DA7B000E20A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F59715E1E38D762000E20A6 /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D7E17FC8631347506A4EB2AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23726B5C3659C2667BB316BA /* Pods_CampusRecruitmentSystem.framework */,
+				19F0D8F620B468437171430A /* Pods_CampusRecruitmentSystemTests.framework */,
+				DEC232E5DE6AD0C66BD2DDEF /* Pods_CampusRecruitmentSystemUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F59714D1E38D423000E20A6 /* Build configuration list for PBXNativeTarget "CampusRecruitmentSystem" */;
 			buildPhases = (
+				7A3FD742BF965E2F258ABB82 /* [CP] Check Pods Manifest.lock */,
 				5F5971211E38D422000E20A6 /* Sources */,
 				5F5971221E38D422000E20A6 /* Frameworks */,
 				5F5971231E38D422000E20A6 /* Resources */,
+				9806182309E87771ADFFE95F /* [CP] Embed Pods Frameworks */,
+				3F75029A3A412F18F9347810 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +237,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F5971501E38D423000E20A6 /* Build configuration list for PBXNativeTarget "CampusRecruitmentSystemTests" */;
 			buildPhases = (
+				A9F03C2975D277E31949AFA3 /* [CP] Check Pods Manifest.lock */,
 				5F5971351E38D423000E20A6 /* Sources */,
 				5F5971361E38D423000E20A6 /* Frameworks */,
 				5F5971371E38D423000E20A6 /* Resources */,
+				5E38B0387EB5910351B76F24 /* [CP] Embed Pods Frameworks */,
+				7B03340945654221B6561E01 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +258,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F5971531E38D423000E20A6 /* Build configuration list for PBXNativeTarget "CampusRecruitmentSystemUITests" */;
 			buildPhases = (
+				E9C55B8A12D968E7563DAFEC /* [CP] Check Pods Manifest.lock */,
 				5F5971401E38D423000E20A6 /* Sources */,
 				5F5971411E38D423000E20A6 /* Frameworks */,
 				5F5971421E38D423000E20A6 /* Resources */,
+				7C276FC1D00A7A2E3F384FEA /* [CP] Embed Pods Frameworks */,
+				ECE747D9DED32DA30D7BC062 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F5971331E38D422000E20A6 /* LaunchScreen.storyboard in Resources */,
+				5F5971571E38D5FA000E20A6 /* GoogleService-Info.plist in Resources */,
 				5F5971301E38D422000E20A6 /* Assets.xcassets in Resources */,
 				5F59712E1E38D422000E20A6 /* Main.storyboard in Resources */,
 			);
@@ -257,13 +352,157 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3F75029A3A412F18F9347810 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CampusRecruitmentSystem/Pods-CampusRecruitmentSystem-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E38B0387EB5910351B76F24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CampusRecruitmentSystemTests/Pods-CampusRecruitmentSystemTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A3FD742BF965E2F258ABB82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7B03340945654221B6561E01 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CampusRecruitmentSystemTests/Pods-CampusRecruitmentSystemTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C276FC1D00A7A2E3F384FEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CampusRecruitmentSystemUITests/Pods-CampusRecruitmentSystemUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9806182309E87771ADFFE95F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CampusRecruitmentSystem/Pods-CampusRecruitmentSystem-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9F03C2975D277E31949AFA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E9C55B8A12D968E7563DAFEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ECE747D9DED32DA30D7BC062 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CampusRecruitmentSystemUITests/Pods-CampusRecruitmentSystemUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5F5971211E38D422000E20A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F59712B1E38D422000E20A6 /* ViewController.swift in Sources */,
+				5F5971651E38D772000E20A6 /* MConstant.swift in Sources */,
+				5F5971621E38D762000E20A6 /* ProfileEditViewController.swift in Sources */,
+				5F5971591E38D757000E20A6 /* SignUp.swift in Sources */,
+				5F5971601E38D762000E20A6 /* LeftDrawerViewController.swift in Sources */,
+				5F5971631E38D762000E20A6 /* User.swift in Sources */,
+				5F5971611E38D762000E20A6 /* MainViewController.swift in Sources */,
 				5F5971291E38D422000E20A6 /* AppDelegate.swift in Sources */,
+				5F59715F1E38D762000E20A6 /* SignIn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +652,7 @@
 		};
 		5F59714E1E38D423000E20A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 003FD3A0F930AB8FB458FC0E /* Pods-CampusRecruitmentSystem.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MCG7B5LH7L;
@@ -426,6 +666,7 @@
 		};
 		5F59714F1E38D423000E20A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06412C474FC1AD67B330B6DE /* Pods-CampusRecruitmentSystem.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MCG7B5LH7L;
@@ -439,6 +680,7 @@
 		};
 		5F5971511E38D423000E20A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F91E619AF4CBEB9E09C991D1 /* Pods-CampusRecruitmentSystemTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -454,6 +696,7 @@
 		};
 		5F5971521E38D423000E20A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AF2695E8115A4D67E19157E /* Pods-CampusRecruitmentSystemTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -469,6 +712,7 @@
 		};
 		5F5971541E38D423000E20A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44AE7C1BB9CB554A6A7DD038 /* Pods-CampusRecruitmentSystemUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = MCG7B5LH7L;
@@ -483,6 +727,7 @@
 		};
 		5F5971551E38D423000E20A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4D6D11943CCA6B6CC02D9AD /* Pods-CampusRecruitmentSystemUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = MCG7B5LH7L;
@@ -514,6 +759,7 @@
 				5F59714F1E38D423000E20A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F5971501E38D423000E20A6 /* Build configuration list for PBXNativeTarget "CampusRecruitmentSystemTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +768,7 @@
 				5F5971521E38D423000E20A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F5971531E38D423000E20A6 /* Build configuration list for PBXNativeTarget "CampusRecruitmentSystemUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +777,7 @@
 				5F5971551E38D423000E20A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
