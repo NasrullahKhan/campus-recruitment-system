@@ -21,7 +21,7 @@ class Auth {
                 return
             }
             
-            let userEntry: [String: Any] = ["email": student.email!, "name": student.name!, "contactNo": student.contactNo!, "userType": student.userType!]
+            let userEntry: [String: Any] = ["email": student.email!, "name": student.name!, "contactNo": student.contactNo!, "userType": 0]
             
             let academicEntry: [String: Any] = ["cgpa": student.cgpa!, "year": student.year!, "course": student.course!, "rollNo": student.rollNo!]
             
@@ -31,6 +31,8 @@ class Auth {
                 if error != nil {
                     completion(error!.localizedDescription)
                 }else {
+                    
+                    User.shared.value = student
                     completion(nil)
                 }
             })
@@ -57,6 +59,7 @@ class Auth {
                 if error != nil {
                     completion(error!.localizedDescription)
                 }else {
+                    User.shared.value = company
                     completion(nil)
                 }
             })

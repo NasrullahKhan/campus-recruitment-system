@@ -14,14 +14,14 @@ class User:Mappable {
     
     var email: String?
     var name: String?
-    var contactNo: Int?
+    var contactNo: String?
     var userType: UserType?
     var password: String?
     var uID: String?
     
     static var shared: Variable<User?> = Variable<User?>(nil)
     
-    init(email: String, name: String, contactNo: Int, userType: UserType, password: String) {
+    init(email: String, name: String, contactNo: String, userType: UserType, password: String) {
         self.email = email
         self.name = name
         self.contactNo = contactNo

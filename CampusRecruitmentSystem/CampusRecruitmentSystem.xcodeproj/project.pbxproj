@@ -26,6 +26,7 @@
 		5F5971621E38D762000E20A6 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F59715D1E38D762000E20A6 /* ProfileEditViewController.swift */; };
 		5F5971631E38D762000E20A6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F59715E1E38D762000E20A6 /* User.swift */; };
 		5F5971651E38D772000E20A6 /* MConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5971641E38D772000E20A6 /* MConstant.swift */; };
+		5F6311FF1E39D4DC00B9ADB3 /* RegisrtationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6311FE1E39D4DC00B9ADB3 /* RegisrtationViewController.swift */; };
 		5FE00A511E38E087001793D9 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE00A501E38E087001793D9 /* AuthService.swift */; };
 		5FE00A531E390176001793D9 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE00A521E390176001793D9 /* Student.swift */; };
 		5FE00A551E390874001793D9 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE00A541E390874001793D9 /* Company.swift */; };
@@ -82,6 +83,7 @@
 		5F59715D1E38D762000E20A6 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
 		5F59715E1E38D762000E20A6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5F5971641E38D772000E20A6 /* MConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MConstant.swift; sourceTree = "<group>"; };
+		5F6311FE1E39D4DC00B9ADB3 /* RegisrtationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisrtationViewController.swift; sourceTree = "<group>"; };
 		5FE00A501E38E087001793D9 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		5FE00A521E390176001793D9 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		5FE00A541E390874001793D9 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 		5F5971661E38DA06000E20A6 /* Login Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5F6311FE1E39D4DC00B9ADB3 /* RegisrtationViewController.swift */,
 				5F5971581E38D757000E20A6 /* StudentSignUp.swift */,
 				5F3755331E39D11000E06E5B /* CompanySignUp.swift */,
 				5F59715A1E38D762000E20A6 /* SignIn.swift */,
@@ -538,6 +541,7 @@
 				5F3755311E39C21400E06E5B /* CompanyService.swift in Sources */,
 				5F5971601E38D762000E20A6 /* LeftDrawerViewController.swift in Sources */,
 				5F5971631E38D762000E20A6 /* User.swift in Sources */,
+				5F6311FF1E39D4DC00B9ADB3 /* RegisrtationViewController.swift in Sources */,
 				5F5971611E38D762000E20A6 /* MainViewController.swift in Sources */,
 				5FE00A551E390874001793D9 /* Company.swift in Sources */,
 				5F5971291E38D422000E20A6 /* AppDelegate.swift in Sources */,

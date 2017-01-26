@@ -11,12 +11,12 @@ import ObjectMapper
 
 class Student: User {
     
-    var rollNo: Float?
-    var year: Int?
+    var rollNo: String?
+    var year: String?
     var course: String?
-    var cgpa: Float?
+    var cgpa: String?
     
-    init(rollNo: Float, year: Int, course: String,cgpa: Float, email: String, name: String, contactNo: Int, userType: UserType, password: String) {
+    init(rollNo: String, year: String, course: String,cgpa: String, email: String, name: String, contactNo: String, userType: UserType, password: String) {
         self.rollNo = rollNo
         self.year = year
         self.course = course
