@@ -93,8 +93,8 @@ class StudentSignUp: UIViewController, ValidationDelegate, UITextFieldDelegate {
                 self.showAlert(title: "Error", msg: error!)
             }else {
                 
-                let mainController = self.storyboard?.instantiateViewController(withIdentifier: "drawerController")
-                self.present(mainController!, animated: true, completion: nil)
+            //    let mainController = self.storyboard?.instantiateViewController(withIdentifier: "drawerController")
+            //    self.present(mainController!, animated: true, completion: nil)
                 
             }
             
