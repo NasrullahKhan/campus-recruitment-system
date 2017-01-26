@@ -49,29 +49,19 @@ class SignIn: UIViewController, ValidationDelegate, UITextFieldDelegate  {
         
         self.view.showHud()
         
-        Auth.login(email: "s@pc.com", password: "123456") { (user, error) in
+        Auth.login(email: "c@pc.com", password: "123456") { (user, error) in
             
             self.view.hideHud()
             
             if error == nil {
                 
-                if let student = user as? Student {
+                if let _ = user as? Student {
                     
-                    let mainController = self.storyboard!.instantiateViewController(withIdentifier: "StudentMainVCIdentifier") as! StudentMainVC
-                    self.present(mainController, animated: true, completion: nil)
-                    
-//                    RequestsServices.applyPost(cID: "-KbPDicz0yJnUNomZUWO", postID: "-KbPERWoXqD0PNs_CO7I", userID: student.uID!, completion: { (error) in
-//                        if error != nil {
-//                        
-//                        }else {
-//                        
-//                        }
-//                    })
-//                    User.sharedCompanies.asObservable().subscribe({ (dict) in
-//                        print(dict.element)
-//                    })
+                    self.performSegue(withIdentifier: "goToStudentMainVC", sender: nil)
+
                 }else if let company = user as? Company {
                     
+                    self.performSegue(withIdentifier: "goToCompanyVC", sender: nil)
 //                    User.sharedPosts.asObservable().subscribe({ (dict) in
 //                        print(dict.element)
 //                    })

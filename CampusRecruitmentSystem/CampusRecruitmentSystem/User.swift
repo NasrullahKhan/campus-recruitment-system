@@ -20,8 +20,8 @@ class User:Mappable {
     var uID: String?
     
     static var shared: Variable<User?> = Variable<User?>(nil)
-    static var sharedStudents: Variable<[String:User]> = Variable([:])
-    static var sharedPosts: Variable<[String:Post]> = Variable([:])
+    static var sharedStudents: Variable<[String:Student]> = Variable([:])
+    static var sharedPosts: Variable<[String: [String:Post]]> = Variable([:])
     static var sharedCompanies: Variable<[String:Company]> = Variable([:])
     
     init(email: String, name: String, contactNo: String, userType: UserType, password: String) {

@@ -18,7 +18,7 @@ class StudentServices {
                 return rxStudentsAcedemics(user:user)
             })
             .subscribe { (user) in
-                User.sharedStudents.value = [user.element!.uID! : user.element!]
+                User.sharedStudents.value[user.element!.uID!] =  user.element!
         }
     }
     

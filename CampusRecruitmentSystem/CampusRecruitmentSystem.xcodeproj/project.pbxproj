@@ -15,6 +15,16 @@
 		5F3A8A531E39E3370007237E /* StudentServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3A8A521E39E3370007237E /* StudentServices.swift */; };
 		5F3A8A551E3A107F0007237E /* RequestsServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3A8A541E3A107F0007237E /* RequestsServices.swift */; };
 		5F3A8A571E3A25A10007237E /* StudentMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3A8A561E3A25A10007237E /* StudentMainVC.swift */; };
+		5F3A8A601E3A28470007237E /* CompanyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3A8A5F1E3A28470007237E /* CompanyCell.swift */; };
+		5F3A8A621E3A36D20007237E /* PostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3A8A611E3A36D20007237E /* PostTableViewController.swift */; };
+		5F3A8A641E3A37B30007237E /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3A8A631E3A37B30007237E /* PostCell.swift */; };
+		5F3A8A681E3A473C0007237E /* StudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3A8A671E3A473C0007237E /* StudentsViewController.swift */; };
+		5F3A8A6A1E3A474D0007237E /* AppliedStudentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3A8A691E3A474D0007237E /* AppliedStudentVC.swift */; };
+		5F3A8A6C1E3A477A0007237E /* PostViewControoler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3A8A6B1E3A477A0007237E /* PostViewControoler.swift */; };
+		5F3A8A6E1E3A47870007237E /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3A8A6D1E3A47870007237E /* CreatePostViewController.swift */; };
+		5F3A8A701E3A49A80007237E /* StudentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3A8A6F1E3A49A80007237E /* StudentCell.swift */; };
+		5F3A8A721E3A49BE0007237E /* AppliedStudentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3A8A711E3A49BE0007237E /* AppliedStudentCell.swift */; };
+		5F3A8A741E3A49D10007237E /* CompanyPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3A8A731E3A49D10007237E /* CompanyPostCell.swift */; };
 		5F5971291E38D422000E20A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5971281E38D422000E20A6 /* AppDelegate.swift */; };
 		5F59712E1E38D422000E20A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F59712C1E38D422000E20A6 /* Main.storyboard */; };
 		5F5971301E38D422000E20A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F59712F1E38D422000E20A6 /* Assets.xcassets */; };
@@ -66,6 +76,16 @@
 		5F3A8A521E39E3370007237E /* StudentServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentServices.swift; sourceTree = "<group>"; };
 		5F3A8A541E3A107F0007237E /* RequestsServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsServices.swift; sourceTree = "<group>"; };
 		5F3A8A561E3A25A10007237E /* StudentMainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentMainVC.swift; sourceTree = "<group>"; };
+		5F3A8A5F1E3A28470007237E /* CompanyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyCell.swift; sourceTree = "<group>"; };
+		5F3A8A611E3A36D20007237E /* PostTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewController.swift; sourceTree = "<group>"; };
+		5F3A8A631E3A37B30007237E /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		5F3A8A671E3A473C0007237E /* StudentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentsViewController.swift; sourceTree = "<group>"; };
+		5F3A8A691E3A474D0007237E /* AppliedStudentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppliedStudentVC.swift; sourceTree = "<group>"; };
+		5F3A8A6B1E3A477A0007237E /* PostViewControoler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewControoler.swift; sourceTree = "<group>"; };
+		5F3A8A6D1E3A47870007237E /* CreatePostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
+		5F3A8A6F1E3A49A80007237E /* StudentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentCell.swift; sourceTree = "<group>"; };
+		5F3A8A711E3A49BE0007237E /* AppliedStudentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppliedStudentCell.swift; sourceTree = "<group>"; };
+		5F3A8A731E3A49D10007237E /* CompanyPostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyPostCell.swift; sourceTree = "<group>"; };
 		5F5971251E38D422000E20A6 /* CampusRecruitmentSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampusRecruitmentSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F5971281E38D422000E20A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F59712D1E38D422000E20A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -145,6 +165,20 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
+		5F3A8A581E3A25FA0007237E /* Company Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5F3A8A671E3A473C0007237E /* StudentsViewController.swift */,
+				5F3A8A6F1E3A49A80007237E /* StudentCell.swift */,
+				5F3A8A691E3A474D0007237E /* AppliedStudentVC.swift */,
+				5F3A8A711E3A49BE0007237E /* AppliedStudentCell.swift */,
+				5F3A8A6B1E3A477A0007237E /* PostViewControoler.swift */,
+				5F3A8A731E3A49D10007237E /* CompanyPostCell.swift */,
+				5F3A8A6D1E3A47870007237E /* CreatePostViewController.swift */,
+			);
+			name = "Company Controllers";
+			sourceTree = "<group>";
+		};
 		5F59711C1E38D422000E20A6 = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +209,7 @@
 				5F5971691E38DA7B000E20A6 /* Model */,
 				5F5971661E38DA06000E20A6 /* Login Controllers */,
 				5F5971681E38DA4B000E20A6 /* Student Controllers */,
+				5F3A8A581E3A25FA0007237E /* Company Controllers */,
 				5F5971641E38D772000E20A6 /* MConstant.swift */,
 				5F59712C1E38D422000E20A6 /* Main.storyboard */,
 				5F59712F1E38D422000E20A6 /* Assets.xcassets */,
@@ -218,6 +253,9 @@
 			isa = PBXGroup;
 			children = (
 				5F3A8A561E3A25A10007237E /* StudentMainVC.swift */,
+				5F3A8A5F1E3A28470007237E /* CompanyCell.swift */,
+				5F3A8A611E3A36D20007237E /* PostTableViewController.swift */,
+				5F3A8A631E3A37B30007237E /* PostCell.swift */,
 			);
 			name = "Student Controllers";
 			sourceTree = "<group>";
@@ -535,18 +573,28 @@
 				5FE00A571E390C84001793D9 /* UserType.swift in Sources */,
 				5F3A8A571E3A25A10007237E /* StudentMainVC.swift in Sources */,
 				5F37552F1E39BB0500E06E5B /* Admin.swift in Sources */,
+				5F3A8A681E3A473C0007237E /* StudentsViewController.swift in Sources */,
+				5F3A8A6A1E3A474D0007237E /* AppliedStudentVC.swift in Sources */,
 				5F5971591E38D757000E20A6 /* StudentSignUp.swift in Sources */,
 				5F3755341E39D11000E06E5B /* CompanySignUp.swift in Sources */,
 				5F37552D1E39BAAB00E06E5B /* Post.swift in Sources */,
+				5F3A8A741E3A49D10007237E /* CompanyPostCell.swift in Sources */,
 				5FE00A531E390176001793D9 /* Student.swift in Sources */,
 				5F3755311E39C21400E06E5B /* CompanyService.swift in Sources */,
+				5F3A8A6E1E3A47870007237E /* CreatePostViewController.swift in Sources */,
 				5F3A8A531E39E3370007237E /* StudentServices.swift in Sources */,
 				5F5971631E38D762000E20A6 /* User.swift in Sources */,
+				5F3A8A721E3A49BE0007237E /* AppliedStudentCell.swift in Sources */,
+				5F3A8A701E3A49A80007237E /* StudentCell.swift in Sources */,
 				5F6311FF1E39D4DC00B9ADB3 /* RegisrtationViewController.swift in Sources */,
+				5F3A8A601E3A28470007237E /* CompanyCell.swift in Sources */,
 				5FE00A551E390874001793D9 /* Company.swift in Sources */,
 				5F5971291E38D422000E20A6 /* AppDelegate.swift in Sources */,
 				5F59715F1E38D762000E20A6 /* SignIn.swift in Sources */,
+				5F3A8A641E3A37B30007237E /* PostCell.swift in Sources */,
+				5F3A8A621E3A36D20007237E /* PostTableViewController.swift in Sources */,
 				5FE00A511E38E087001793D9 /* AuthService.swift in Sources */,
+				5F3A8A6C1E3A477A0007237E /* PostViewControoler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

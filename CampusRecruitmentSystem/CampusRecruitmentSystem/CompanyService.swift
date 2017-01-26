@@ -58,7 +58,13 @@ class CompanyServices {
             let postObj = Post(JSON: data)
             postObj!.postID = post.key
             
-            User.sharedPosts.value = [post.key : postObj!]
+            if User.sharedPosts.value[cID] == nil {
+                User.sharedPosts.value[cID] = [post.key : postObj!]
+            }else {
+                User.sharedPosts.value[cID]![post.key] = postObj!
+            }
+            
+            RequestsServices.companyUserRequests(cID: cID, postID: post.key, userID: <#T##String#>, completion: <#T##(String?) -> Void#>)
         })
     }
     

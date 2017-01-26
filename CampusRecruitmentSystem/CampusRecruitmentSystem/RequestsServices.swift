@@ -32,9 +32,11 @@ class RequestsServices {
         })
     }
     
-    static func companyUserRequests(cID: String, postID: String, userID: String, completion : @escaping (_ errorDesc : String?) -> Void){
+    static func companyUserRequests(cID: String, postID: String, completion : @escaping (_ errorDesc : String?) -> Void){
         
-        cRef.child("companies-requests-by-users/\(cID)/\(postID)/\(userID)").observe(.value, with: { (companyRequestByUser) in
+        cRef.child("companies-requests-by-users/\(cID)/\(postID)/)").observe(.value, with: { (userIDs) in
+            
+            print(userIDs)
             completion(nil)
         })
     }
