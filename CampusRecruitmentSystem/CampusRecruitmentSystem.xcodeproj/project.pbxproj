@@ -11,6 +11,7 @@
 		5F37552D1E39BAAB00E06E5B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F37552C1E39BAAB00E06E5B /* Post.swift */; };
 		5F37552F1E39BB0500E06E5B /* Admin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F37552E1E39BB0500E06E5B /* Admin.swift */; };
 		5F3755311E39C21400E06E5B /* CompanyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3755301E39C21400E06E5B /* CompanyService.swift */; };
+		5F3755341E39D11000E06E5B /* CompanySignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3755331E39D11000E06E5B /* CompanySignUp.swift */; };
 		5F5971291E38D422000E20A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5971281E38D422000E20A6 /* AppDelegate.swift */; };
 		5F59712E1E38D422000E20A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F59712C1E38D422000E20A6 /* Main.storyboard */; };
 		5F5971301E38D422000E20A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F59712F1E38D422000E20A6 /* Assets.xcassets */; };
@@ -18,7 +19,7 @@
 		5F59713E1E38D423000E20A6 /* CampusRecruitmentSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F59713D1E38D423000E20A6 /* CampusRecruitmentSystemTests.swift */; };
 		5F5971491E38D423000E20A6 /* CampusRecruitmentSystemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5971481E38D423000E20A6 /* CampusRecruitmentSystemUITests.swift */; };
 		5F5971571E38D5FA000E20A6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F5971561E38D5FA000E20A6 /* GoogleService-Info.plist */; };
-		5F5971591E38D757000E20A6 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5971581E38D757000E20A6 /* SignUp.swift */; };
+		5F5971591E38D757000E20A6 /* StudentSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5971581E38D757000E20A6 /* StudentSignUp.swift */; };
 		5F59715F1E38D762000E20A6 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F59715A1E38D762000E20A6 /* SignIn.swift */; };
 		5F5971601E38D762000E20A6 /* LeftDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F59715B1E38D762000E20A6 /* LeftDrawerViewController.swift */; };
 		5F5971611E38D762000E20A6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F59715C1E38D762000E20A6 /* MainViewController.swift */; };
@@ -60,6 +61,7 @@
 		5F37552C1E39BAAB00E06E5B /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		5F37552E1E39BB0500E06E5B /* Admin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Admin.swift; sourceTree = "<group>"; };
 		5F3755301E39C21400E06E5B /* CompanyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyService.swift; sourceTree = "<group>"; };
+		5F3755331E39D11000E06E5B /* CompanySignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanySignUp.swift; sourceTree = "<group>"; };
 		5F5971251E38D422000E20A6 /* CampusRecruitmentSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampusRecruitmentSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F5971281E38D422000E20A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F59712D1E38D422000E20A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -73,7 +75,7 @@
 		5F5971481E38D423000E20A6 /* CampusRecruitmentSystemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusRecruitmentSystemUITests.swift; sourceTree = "<group>"; };
 		5F59714A1E38D423000E20A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F5971561E38D5FA000E20A6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		5F5971581E38D757000E20A6 /* SignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		5F5971581E38D757000E20A6 /* StudentSignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentSignUp.swift; sourceTree = "<group>"; };
 		5F59715A1E38D762000E20A6 /* SignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		5F59715B1E38D762000E20A6 /* LeftDrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftDrawerViewController.swift; sourceTree = "<group>"; };
 		5F59715C1E38D762000E20A6 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -200,7 +202,8 @@
 		5F5971661E38DA06000E20A6 /* Login Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5F5971581E38D757000E20A6 /* SignUp.swift */,
+				5F5971581E38D757000E20A6 /* StudentSignUp.swift */,
+				5F3755331E39D11000E06E5B /* CompanySignUp.swift */,
 				5F59715A1E38D762000E20A6 /* SignIn.swift */,
 			);
 			name = "Login Controllers";
@@ -528,7 +531,8 @@
 				5F5971621E38D762000E20A6 /* ProfileEditViewController.swift in Sources */,
 				5FE00A571E390C84001793D9 /* UserType.swift in Sources */,
 				5F37552F1E39BB0500E06E5B /* Admin.swift in Sources */,
-				5F5971591E38D757000E20A6 /* SignUp.swift in Sources */,
+				5F5971591E38D757000E20A6 /* StudentSignUp.swift in Sources */,
+				5F3755341E39D11000E06E5B /* CompanySignUp.swift in Sources */,
 				5F37552D1E39BAAB00E06E5B /* Post.swift in Sources */,
 				5FE00A531E390176001793D9 /* Student.swift in Sources */,
 				5F3755311E39C21400E06E5B /* CompanyService.swift in Sources */,

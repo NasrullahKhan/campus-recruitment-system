@@ -9,7 +9,7 @@
 import UIKit
 import SwiftValidator
 
-class SignUp: UIViewController, ValidationDelegate, UITextFieldDelegate {
+class StudentSignUp: UIViewController, ValidationDelegate, UITextFieldDelegate {
     
     // TextFields
     @IBOutlet weak var emailTextField: UITextField!
