@@ -47,11 +47,11 @@ class Auth {
                 return
             }
             
-            let userEntry: [String: Any] = ["email": company.email!, "name": company.name!, "contactNo": company.contactNo!, "userType": company.userType!]
+            let userEntry: [String: Any] = ["email": company.email!, "name": company.name!, "contactNo": company.contactNo!, "userType": 2]
             
             let companyEntry: [String: Any] = ["address": company.address!, "companyName": company.companyName!, "description": company.description!]
             
-            let multiPath: [String: Any] = ["users/\(user!.uid)": userEntry, "company/\(user!.uid)": companyEntry]
+            let multiPath: [String: Any] = ["users/\(user!.uid)": userEntry, "companies/\(user!.uid)/\(cRef.childByAutoId().key)": companyEntry]
             
             cRef.updateChildValues(multiPath, withCompletionBlock: { (error, ref) in
                 if error != nil {
@@ -64,12 +64,12 @@ class Auth {
         })
     }
     
-    static func login(email: String, password: String, completion : @escaping (_ errorDesc : String?) -> Void) {
+    static func login(email: String, password: String, completion : @escaping (_ user: User? ,_ errorDesc : String?) -> Void) {
         
         FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
             
             guard let _ = user else {
-                completion(error!.localizedDescription)
+                completion(nil, error!.localizedDescription)
                 return
             }
             
@@ -78,28 +78,33 @@ class Auth {
                 
                 let data = snapshot.value as! [String:Any]
                 let userObj = User(JSON: data)
+                userObj!.uID = user!.uid
                 
                 switch userObj!.userType! {
                 case .student:
-                    print(userObj)
-                    cRef.child("academics/\(user!.uid)").observeSingleEvent(of: .value, with: { (academics) in
-                        let data = snapshot.value as! [String:Any]
-                        let studentObj = Student(JSON: data)
-                        
+                    cRef.child("academics/\(user!.uid)").observeSingleEvent(of: .value, with: { (academicsData) in
+                        let academicData = academicsData.value as! [String:Any]
+                        let stuObj = Student(JSON: academicData)
+                        let student = userObj! + stuObj!
+                        User.shared.value = student
+                        completion(student, nil)
                     })
                 case .admin:
-                    print(userObj)
+                    break
+                    
                 case .company:
-                    print(userObj)
-                    cRef.child("company/\(user!.uid)").observeSingleEvent(of: .value, with: { (academics) in
-                        let data = snapshot.value as! [String:Any]
-                        let companyObj = Company(JSON: data)
+                    
+                    cRef.child("companies/\(user!.uid)").observeSingleEvent(of: .childAdded, with: { (companyData) in
                         
+                        let data = companyData.value as! [String:Any]
+                        let companyObj = Company(JSON: data)
+                        companyObj!.cID = companyData.key
+                        let company = userObj! + companyObj!
+                        User.shared.value = company
+                        completion(company, nil)
                     })
                 }
-                    
-                    
-                    completion(nil)
+                
                 })
                 
             })

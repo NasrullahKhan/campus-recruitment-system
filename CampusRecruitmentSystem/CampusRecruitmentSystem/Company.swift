@@ -14,6 +14,7 @@ class Company: User {
     var address: String?
     var companyName: String?
     var description: String?
+    var cID: String?
     
     init(address: String, companyName: String, description: String, email: String, name: String, contactNo: Int, userType: UserType, password: String) {
         self.address = address

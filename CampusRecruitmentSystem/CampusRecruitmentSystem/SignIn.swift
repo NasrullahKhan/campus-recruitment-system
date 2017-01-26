@@ -47,7 +47,35 @@ class SignIn: UIViewController, ValidationDelegate, UITextFieldDelegate  {
     
     @IBAction func loginTapped(_ sender: Any) {
         
-        self.validator.validate(self)
+        self.view.showHud()
+        
+        Auth.login(email: "c@pc.com", password: "123456") { (user, error) in
+            
+            self.view.hideHud()
+            
+            if error == nil {
+                
+                if let student = user as? Student {
+                    
+                }else if let company = user as? Company {
+                    
+                    let post = Post(title: "iOS Developer Requried", description: "We need crazy developer", salary: "50,000", technology: technology.iOS)
+                    CompanyServices.createPost(cID: company.cID!, post: post, completion: { (error) in
+                        
+                        if error != nil {
+                            
+                        }else {
+                            
+                            
+                        }
+                    })
+                }
+            }else {
+                
+            }
+        }
+        
+       // self.validator.validate(self)
         
     }
 
@@ -55,11 +83,8 @@ class SignIn: UIViewController, ValidationDelegate, UITextFieldDelegate  {
     
     func validationSuccessful() {
         
-        self.view.showHud()
-        
-        Auth.login(email: self.emailTextField.text!, password: self.passwordTextField.text!) { (error) in
-            self.view.hideHud()
-        }
+
+        //Auth.login(email: "c@pc.com", password: "123456", completion: <#T##(String?) -> Void#>)
 //        FIRAuth.auth()?.signIn(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!, completion: { (user, error) in
 //           
 //            self.view.hideHud()
@@ -72,6 +97,8 @@ class SignIn: UIViewController, ValidationDelegate, UITextFieldDelegate  {
 //            let mainController = self.storyboard?.instantiateViewController(withIdentifier: "drawerController")
 //            self.present(mainController!, animated: true, completion: nil)
 //        })
+        
+        
     }
     
     func validationFailed(_ errors:[(Validatable, ValidationError)]) {

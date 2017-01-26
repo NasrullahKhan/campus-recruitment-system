@@ -17,8 +17,9 @@ class User:Mappable {
     var contactNo: Int?
     var userType: UserType?
     var password: String?
+    var uID: String?
     
-    static var shared: Variable<[User]> = Variable([])
+    static var shared: Variable<User?> = Variable<User?>(nil)
     
     init(email: String, name: String, contactNo: Int, userType: UserType, password: String) {
         self.email = email
@@ -45,11 +46,11 @@ class User:Mappable {
 
 func +(user: User, student: Student) -> Student {
     
-    student.email = user.email
-    student.name = user.name
-    student.contactNo = user.contactNo
-    student.userType = user.userType
-    student.password = user.password
+    student.email = user.email!
+    student.name = user.name!
+    student.contactNo = user.contactNo!
+    student.userType = user.userType!
+    student.uID = user.uID!
     
     return student
 }
@@ -60,7 +61,7 @@ func +(user: User, company: Company) -> Company {
     company.name = user.name
     company.contactNo = user.contactNo
     company.userType = user.userType
-    company.password = user.password
+    company.uID = user.uID
     
     return company
 }

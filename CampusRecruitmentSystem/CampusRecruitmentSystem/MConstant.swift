@@ -13,6 +13,9 @@ import FirebaseDatabase
 
 var cRef = FIRDatabase.database().reference()
 
+// firebase servertimestamp
+let kFirebaseServerValueTimestamp = [".sv":"timestamp"]
+
 extension UIView {
     
     func showHud() {

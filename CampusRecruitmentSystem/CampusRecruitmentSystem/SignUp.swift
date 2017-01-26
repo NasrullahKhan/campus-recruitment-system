@@ -88,20 +88,18 @@ class SignUp: UIViewController, ValidationDelegate, UITextFieldDelegate {
 //            }
 //        }
         
-//        let company = Company(address: "DHA Phase 5", companyName: "Panacloud Pvt. Ltd.", description: "Software Hourse", email: "panacloud@esox.com", name: "ZiaKhan", contactNo: 12345677712, userType: 2, password: "123456")
-//        
-//        Auth.createCompany(company: company) { (error) in
-//            
-//            self.view.hideHud()
-//            
-//            if error != nil {
-//                self.showAlert(title: "Error", msg: error!)
-//            }else {
-//                
-//                self.showAlert(title: "Success", msg: "Created Successfully")
-//                
-//            }
-//        }
+        let company = Company(address: "DHA Phase 5", companyName: "Panacloud Pvt. Ltd.", description: "Software Hourse", email: "c@pc.com", name: "ZiaKhan", contactNo: 12345677712, userType: .company, password: "123456")
+        
+        Auth.createCompany(company: company) { (error) in
+            
+            self.view.hideHud()
+            
+            if error != nil {
+                self.showAlert(title: "Error", msg: error!)
+            }else {
+                self.showAlert(title: "Success", msg: "Created Successfully")
+            }
+        }
     }
     
     func validationFailed(_ errors:[(Validatable, ValidationError)]) {

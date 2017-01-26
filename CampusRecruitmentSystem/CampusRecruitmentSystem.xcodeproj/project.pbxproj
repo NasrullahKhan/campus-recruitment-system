@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		086A67306DE3EC50A6DCDE3F /* Pods_CampusRecruitmentSystemTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F0D8F620B468437171430A /* Pods_CampusRecruitmentSystemTests.framework */; };
+		5F37552D1E39BAAB00E06E5B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F37552C1E39BAAB00E06E5B /* Post.swift */; };
+		5F37552F1E39BB0500E06E5B /* Admin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F37552E1E39BB0500E06E5B /* Admin.swift */; };
+		5F3755311E39C21400E06E5B /* CompanyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3755301E39C21400E06E5B /* CompanyService.swift */; };
 		5F5971291E38D422000E20A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5971281E38D422000E20A6 /* AppDelegate.swift */; };
 		5F59712E1E38D422000E20A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F59712C1E38D422000E20A6 /* Main.storyboard */; };
 		5F5971301E38D422000E20A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F59712F1E38D422000E20A6 /* Assets.xcassets */; };
@@ -22,7 +25,7 @@
 		5F5971621E38D762000E20A6 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F59715D1E38D762000E20A6 /* ProfileEditViewController.swift */; };
 		5F5971631E38D762000E20A6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F59715E1E38D762000E20A6 /* User.swift */; };
 		5F5971651E38D772000E20A6 /* MConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5971641E38D772000E20A6 /* MConstant.swift */; };
-		5FE00A511E38E087001793D9 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE00A501E38E087001793D9 /* Auth.swift */; };
+		5FE00A511E38E087001793D9 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE00A501E38E087001793D9 /* AuthService.swift */; };
 		5FE00A531E390176001793D9 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE00A521E390176001793D9 /* Student.swift */; };
 		5FE00A551E390874001793D9 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE00A541E390874001793D9 /* Company.swift */; };
 		5FE00A571E390C84001793D9 /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE00A561E390C84001793D9 /* UserType.swift */; };
@@ -54,6 +57,9 @@
 		23726B5C3659C2667BB316BA /* Pods_CampusRecruitmentSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampusRecruitmentSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AF2695E8115A4D67E19157E /* Pods-CampusRecruitmentSystemTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusRecruitmentSystemTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CampusRecruitmentSystemTests/Pods-CampusRecruitmentSystemTests.release.xcconfig"; sourceTree = "<group>"; };
 		44AE7C1BB9CB554A6A7DD038 /* Pods-CampusRecruitmentSystemUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusRecruitmentSystemUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CampusRecruitmentSystemUITests/Pods-CampusRecruitmentSystemUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F37552C1E39BAAB00E06E5B /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		5F37552E1E39BB0500E06E5B /* Admin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Admin.swift; sourceTree = "<group>"; };
+		5F3755301E39C21400E06E5B /* CompanyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyService.swift; sourceTree = "<group>"; };
 		5F5971251E38D422000E20A6 /* CampusRecruitmentSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampusRecruitmentSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F5971281E38D422000E20A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F59712D1E38D422000E20A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,7 +80,7 @@
 		5F59715D1E38D762000E20A6 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
 		5F59715E1E38D762000E20A6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5F5971641E38D772000E20A6 /* MConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MConstant.swift; sourceTree = "<group>"; };
-		5FE00A501E38E087001793D9 /* Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		5FE00A501E38E087001793D9 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		5FE00A521E390176001793D9 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		5FE00A541E390874001793D9 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		5FE00A561E390C84001793D9 /* UserType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
@@ -124,6 +130,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5F3755321E39C21C00E06E5B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5F3755301E39C21400E06E5B /* CompanyService.swift */,
+				5FE00A501E38E087001793D9 /* AuthService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		5F59711C1E38D422000E20A6 = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				5F5971281E38D422000E20A6 /* AppDelegate.swift */,
+				5F3755321E39C21C00E06E5B /* Services */,
 				5F5971691E38DA7B000E20A6 /* Model */,
 				5F5971661E38DA06000E20A6 /* Login Controllers */,
 				5F5971681E38DA4B000E20A6 /* Main Controllers */,
@@ -207,7 +223,8 @@
 				5FE00A561E390C84001793D9 /* UserType.swift */,
 				5FE00A521E390176001793D9 /* Student.swift */,
 				5FE00A541E390874001793D9 /* Company.swift */,
-				5FE00A501E38E087001793D9 /* Auth.swift */,
+				5F37552C1E39BAAB00E06E5B /* Post.swift */,
+				5F37552E1E39BB0500E06E5B /* Admin.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -510,15 +527,18 @@
 				5F5971651E38D772000E20A6 /* MConstant.swift in Sources */,
 				5F5971621E38D762000E20A6 /* ProfileEditViewController.swift in Sources */,
 				5FE00A571E390C84001793D9 /* UserType.swift in Sources */,
+				5F37552F1E39BB0500E06E5B /* Admin.swift in Sources */,
 				5F5971591E38D757000E20A6 /* SignUp.swift in Sources */,
+				5F37552D1E39BAAB00E06E5B /* Post.swift in Sources */,
 				5FE00A531E390176001793D9 /* Student.swift in Sources */,
+				5F3755311E39C21400E06E5B /* CompanyService.swift in Sources */,
 				5F5971601E38D762000E20A6 /* LeftDrawerViewController.swift in Sources */,
 				5F5971631E38D762000E20A6 /* User.swift in Sources */,
 				5F5971611E38D762000E20A6 /* MainViewController.swift in Sources */,
 				5FE00A551E390874001793D9 /* Company.swift in Sources */,
 				5F5971291E38D422000E20A6 /* AppDelegate.swift in Sources */,
 				5F59715F1E38D762000E20A6 /* SignIn.swift in Sources */,
-				5FE00A511E38E087001793D9 /* Auth.swift in Sources */,
+				5FE00A511E38E087001793D9 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
