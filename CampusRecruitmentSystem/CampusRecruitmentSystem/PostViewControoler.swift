@@ -37,6 +37,8 @@ class PostViewControoler: UIViewController, UITableViewDataSource, UITableViewDe
 
     func goToCreatePost(){
         
+        self.performSegue(withIdentifier: "goToCreatePost", sender: nil)
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -34,9 +34,10 @@ class RequestsServices {
     
     static func companyUserRequests(cID: String, postID: String, completion : @escaping (_ errorDesc : String?) -> Void){
         
-        cRef.child("companies-requests-by-users/\(cID)/\(postID)/)").observe(.value, with: { (userIDs) in
+        cRef.child("companies-requests-by-users/\(cID)/\(postID)").observe(.childAdded, with: { (userIDs) in
             
-            print(userIDs)
+            User.sharedCompanyRequestIDs.value.append(userIDs.key)
+            
             completion(nil)
         })
     }

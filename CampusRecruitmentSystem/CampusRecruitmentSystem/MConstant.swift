@@ -39,4 +39,17 @@ extension UIViewController {
         
         self.present(alertController, animated: true, completion: nil)
     }
+    
+    func showAlert( title: String, msg: String, okClick: @escaping ()->Void ){
+        
+        let alertController = UIAlertController(title: title, message:
+            msg, preferredStyle: UIAlertControllerStyle.alert)
+        
+        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) -> Void in
+            okClick()
+        }))
+        
+        self.present(alertController, animated: true, completion: nil)
+        
+    }
 }

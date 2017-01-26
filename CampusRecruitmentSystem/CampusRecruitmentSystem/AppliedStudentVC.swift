@@ -13,33 +13,41 @@ class AppliedStudentVC: UIViewController, UITableViewDataSource, UITableViewDele
 
     @IBOutlet weak var tableView: UITableView!
     
+    var studentsRequest = [String: Student]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.navigationItem.title = "AppliedStudent"
-        // Do any additional setup after loading the view.
+       
+        User.sharedCompanyRequestIDs.asObservable()
+            .subscribe { (userID) in
+               
+                for userID in User.sharedCompanyRequestIDs.value {
+                
+                    if let student = User.sharedStudents.value[userID] {
+                        self.studentsRequest[userID] = student
+                    }
+                }
+                
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return self.studentsRequest.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "appliedStudentCellIdentifier", for: indexPath) as! AppliedStudentCell
         
+        let student = Array(self.studentsRequest.values)[indexPath.row]
+        cell.studentName.text = student.name
+        cell.cgpa.text = student.cgpa
+        cell.year.text = student.year
         
         return cell
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

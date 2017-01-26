@@ -85,8 +85,7 @@ class CompanySignUp: UIViewController, ValidationDelegate, UITextFieldDelegate {
             if error != nil {
                 self.showAlert(title: "Error", msg: error!)
             }else {
-                let mainController = self.storyboard?.instantiateViewController(withIdentifier: "drawerController")
-                self.present(mainController!, animated: true, completion: nil)
+                self.showAlert(title: "Success", msg: "Student Registred Successfully, go to Login Screen and sign in")
             }
         }
     }

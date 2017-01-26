@@ -64,7 +64,10 @@ class CompanyServices {
                 User.sharedPosts.value[cID]![post.key] = postObj!
             }
             
-            RequestsServices.companyUserRequests(cID: cID, postID: post.key, userID: <#T##String#>, completion: <#T##(String?) -> Void#>)
+            RequestsServices.companyUserRequests(cID: cID, postID: post.key, completion: { (error) in
+                if error == nil {
+                }
+            })
         })
     }
     

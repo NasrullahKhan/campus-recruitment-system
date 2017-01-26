@@ -47,9 +47,17 @@ class SignIn: UIViewController, ValidationDelegate, UITextFieldDelegate  {
     
     @IBAction func loginTapped(_ sender: Any) {
         
-        self.view.showHud()
+        self.validator.validate(self)
         
-        Auth.login(email: "c@pc.com", password: "123456") { (user, error) in
+    }
+
+    // MARK: ValidationDelegate Methods
+    
+    func validationSuccessful() {
+        
+        self.view.showHud()
+
+        Auth.login(email: self.emailTextField.text!, password: self.passwordTextField.text!) { (user, error) in
             
             self.view.hideHud()
             
@@ -58,65 +66,13 @@ class SignIn: UIViewController, ValidationDelegate, UITextFieldDelegate  {
                 if let _ = user as? Student {
                     
                     self.performSegue(withIdentifier: "goToStudentMainVC", sender: nil)
-
-                }else if let company = user as? Company {
+                    
+                }else if let _ = user as? Company {
                     
                     self.performSegue(withIdentifier: "goToCompanyVC", sender: nil)
-//                    User.sharedPosts.asObservable().subscribe({ (dict) in
-//                        print(dict.element)
-//                    })
-                    
-//                    User.sharedStudents.asObservable().subscribe({ (dict) in
-//                        print(User.sharedStudents.value)
-//                    })
-                    
-//                    let post = Post(title: "Sr. Android Developer Requried", description: "We need crazy developer", salary: "75,000", technology: "Android")
-                    
-//                    CompanyServices.updatePost(cID: company.cID!, post: post, completion: { (error) in
-//                        if error != nil {
-//                        
-//                        }else {
-//                        
-//                        }
-//                    })
-                    
-//                    CompanyServices.createPost(cID: company.cID!, post: post, completion: { (error) in
-//                        
-//                        if error != nil {
-//                            
-//                        }else {
-//                            
-//                            
-//                        }
-//                    })
                 }
-            }else {
-                
             }
         }
-        
-       // self.validator.validate(self)
-        
-    }
-
-    // MARK: ValidationDelegate Methods
-    
-    func validationSuccessful() {
-        
-
-        //Auth.login(email: "c@pc.com", password: "123456", completion: <#T##(String?) -> Void#>)
-//        FIRAuth.auth()?.signIn(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!, completion: { (user, error) in
-//           
-//            self.view.hideHud()
-//            
-//            guard let _ = user else {
-//                self.showAlert(title: "Error", msg: error!.localizedDescription)
-//                return
-//            }
-//            
-//            let mainController = self.storyboard?.instantiateViewController(withIdentifier: "drawerController")
-//            self.present(mainController!, animated: true, completion: nil)
-//        })
         
         
     }

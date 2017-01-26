@@ -93,39 +93,11 @@ class StudentSignUp: UIViewController, ValidationDelegate, UITextFieldDelegate {
                 self.showAlert(title: "Error", msg: error!)
             }else {
                 
-            //    let mainController = self.storyboard?.instantiateViewController(withIdentifier: "drawerController")
-            //    self.present(mainController!, animated: true, completion: nil)
+                self.showAlert(title: "Success", msg: "Student Registred Successfully, go to Login Screen and sign in")
                 
             }
             
         }
-//
-//        Auth.createStudent(student: student) { (error) in
-//            
-//            self.view.hideHud()
-//            
-//            if error != nil {
-//                self.showAlert(title: "Error", msg: error!)
-//            }else {
-//                
-//                let mainController = self.storyboard?.instantiateViewController(withIdentifier: "drawerController")
-//                self.present(mainController!, animated: true, completion: nil)
-//                
-//            }
-//        }
-        
-//        let company = Company(address: "DHA Phase 5", companyName: "Panacloud Pvt. Ltd.", description: "Software Hourse", email: "c@pc.com", name: "ZiaKhan", contactNo: 12345677712, userType: .company, password: "123456")
-//        
-//        Auth.createCompany(company: company) { (error) in
-//            
-//            self.view.hideHud()
-//            
-//            if error != nil {
-//                self.showAlert(title: "Error", msg: error!)
-//            }else {
-//                self.showAlert(title: "Success", msg: "Created Successfully")
-//            }
-//        }
     }
     
     func validationFailed(_ errors:[(Validatable, ValidationError)]) {
