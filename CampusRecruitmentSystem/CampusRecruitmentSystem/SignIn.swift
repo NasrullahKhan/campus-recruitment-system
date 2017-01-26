@@ -49,7 +49,7 @@ class SignIn: UIViewController, ValidationDelegate, UITextFieldDelegate  {
         
         self.view.showHud()
         
-        Auth.login(email: "c@pc.com", password: "123456") { (user, error) in
+        Auth.login(email: "tp@pc.com", password: "123456") { (user, error) in
             
             self.view.hideHud()
             
@@ -57,18 +57,38 @@ class SignIn: UIViewController, ValidationDelegate, UITextFieldDelegate  {
                 
                 if let student = user as? Student {
                     
+//                    User.sharedCompanies.asObservable().subscribe({ (dict) in
+//                        print(dict.element)
+//                    })
                 }else if let company = user as? Company {
                     
-                    let post = Post(title: "iOS Developer Requried", description: "We need crazy developer", salary: "50,000", technology: technology.iOS)
-                    CompanyServices.createPost(cID: company.cID!, post: post, completion: { (error) in
-                        
-                        if error != nil {
-                            
-                        }else {
-                            
-                            
-                        }
-                    })
+//                    User.sharedPosts.asObservable().subscribe({ (dict) in
+//                        print(dict.element)
+//                    })
+                    
+//                    User.sharedStudents.asObservable().subscribe({ (dict) in
+//                        print(User.sharedStudents.value)
+//                    })
+                    
+//                    let post = Post(title: "Sr. Android Developer Requried", description: "We need crazy developer", salary: "75,000", technology: "Android")
+                    
+//                    CompanyServices.updatePost(cID: company.cID!, post: post, completion: { (error) in
+//                        if error != nil {
+//                        
+//                        }else {
+//                        
+//                        }
+//                    })
+                    
+//                    CompanyServices.createPost(cID: company.cID!, post: post, completion: { (error) in
+//                        
+//                        if error != nil {
+//                            
+//                        }else {
+//                            
+//                            
+//                        }
+//                    })
                 }
             }else {
                 

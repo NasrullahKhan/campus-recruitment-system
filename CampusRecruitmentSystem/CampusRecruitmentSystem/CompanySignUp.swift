@@ -99,13 +99,13 @@ class CompanySignUp: UIViewController, ValidationDelegate, UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         
-//        self.validator.validateField(textField){ error in
-//            if error == nil {
-//                // Field validation was successful
-//            } else {
-//                // Validation error occurred
-//            }
-//        }
+        self.validator.validateField(textField){ error in
+            if error == nil {
+                // Field validation was successful
+            } else {
+                // Validation error occurred
+            }
+        }
     }
 }
 

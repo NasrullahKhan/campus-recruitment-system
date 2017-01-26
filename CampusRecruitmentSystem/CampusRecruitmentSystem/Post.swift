@@ -6,7 +6,8 @@
 //  Copyright © 2017 Nasrullah Khan. All rights reserved.
 //
 
-import Foundation 
+import Foundation
+import ObjectMapper
 
 enum technology:Int {
     case iOS
@@ -14,18 +15,31 @@ enum technology:Int {
     case web
 }
 
-class Post {
+class Post : Mappable {
 
     var title: String?
     var description: String?
     var salary: String?
-    var technology: technology?
+    var technology: String?
+    var postID: String?
     
-    init(title: String, description: String, salary: String, technology: technology) {
+    init(title: String, description: String, salary: String, technology: String) {
         self.title = title
         self.description = description
         self.salary = salary
         self.technology = technology
+    }
+    
+    // Mappable
+    func mapping(map: Map) {
+        title           <- map["title"]
+        description     <- map["description"]
+        salary          <- map["salary"]
+        technology      <- map["technology"]
+    }
+    
+    required init(map: Map) {
+        
     }
     
 

@@ -77,7 +77,6 @@ class Auth {
             }
             
             cRef.child("users/\(user!.uid)").observeSingleEvent(of: .value, with: { (snapshot) in
-                //print(snapshot)
                 
                 let data = snapshot.value as! [String:Any]
                 let userObj = User(JSON: data)
@@ -90,6 +89,7 @@ class Auth {
                         let stuObj = Student(JSON: academicData)
                         let student = userObj! + stuObj!
                         User.shared.value = student
+                        CompanyServices.listnerForCompanies()
                         completion(student, nil)
                     })
                 case .admin:
@@ -104,6 +104,8 @@ class Auth {
                         companyObj!.cID = companyData.key
                         let company = userObj! + companyObj!
                         User.shared.value = company
+                        StudentServices.listnerForStudent()
+                        CompanyServices.listnerForCompanyPosts(cID: companyData.key)
                         completion(company, nil)
                     })
                 }
